@@ -1,0 +1,12 @@
+.login-input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: solid 1px #DDD;
+  border-left: solid 1px #333;
+}
+
+.form-control,
+.btn,
+.jumbotron{
+  border-radius: 0 !important;
+}
