@@ -49,7 +49,7 @@ if(isset($_POST['email'])){
             $error_msg = "Error.";
           }
         }else{
-          header("Location: activation/".$input_email);
+          header("Location: activation?email=".$input_email);
         }
       }
 

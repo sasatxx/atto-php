@@ -15,9 +15,25 @@ if (isset($_GET['path'])) {
       include('system/functions/user/login.php');
       include('frontend/pages/user/login.php');
       break;
+      //Login
+    case 'register':
+      headerMenu();
+      include('system/functions/user/register.php');
+      include('frontend/pages/user/register.php');
+      break;
+      //Activation
+    case 'activation':
+      headerMenu();
+      include('system/functions/user/activation.php');
+      include('frontend/pages/user/activation.php');
+      break;
       //About
     case 'about':
       include('frontend/pages/about/intro.php');
+      break;
+      //About
+    case 'mailer':
+      include('system/mailer.php');
       break;
       //default
     default:

@@ -14,12 +14,23 @@ function getIP(){
   return $ip;
 }
 
-// Login Token Generator
+// Token Generator 64B
 function genToken64(){
   $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
   $charactersLength = strlen($characters);
   $randomString = '';
   for ($i = 0; $i < 64; $i++) {
+    $randomString .= $characters[rand(0, $charactersLength - 1)];
+  }
+  return $randomString;
+}
+
+// Token Generator 32B
+function genToken32(){
+  $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  $charactersLength = strlen($characters);
+  $randomString = '';
+  for ($i = 0; $i < 32; $i++) {
     $randomString .= $characters[rand(0, $charactersLength - 1)];
   }
   return $randomString;

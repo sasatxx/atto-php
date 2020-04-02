@@ -44,6 +44,7 @@
   date_default_timezone_set("Europe/Belgrade");
 
   include('system/functions.php');
+  include('system/msg.php');
   include('system/mysql-connect.php');
   include('system/router.php');
   ?>
