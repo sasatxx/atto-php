@@ -16,10 +16,16 @@ if (isset($_GET['path'])) {
       include('frontend/pages/user/login.php');
       break;
       //Login
-    case 'register':
+    case 'create-account':
       headerMenu();
       include('system/functions/user/register.php');
       include('frontend/pages/user/register.php');
+      break;
+      //Recovery
+    case 'recovery':
+      headerMenu();
+      include('system/functions/user/recovery.php');
+      include('frontend/pages/user/recovery.php');
       break;
       //Activation
     case 'activation':

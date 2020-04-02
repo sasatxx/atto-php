@@ -21,3 +21,18 @@ label {
   border: 0;
   border-radius: 0;
 }
+
+.lined-text{
+  text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2.3rem;
+    border-bottom: solid 1px #BBB;
+    color: #666;
+}
+.lined-text span{
+  position: relative;
+  bottom: -0.7rem;
+  padding: 0.5rem;
+  background: #e9ecef;
+  text-transform: uppercase;
+}

@@ -17,7 +17,7 @@
         ';
       }
       ?>
-      <form method="post" action="register">
+      <form method="post" action="create-account">
         <!-- email -->
         <div class="form-group">
           <label for="Email1">Email address</label>

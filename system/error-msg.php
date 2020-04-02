@@ -12,5 +12,5 @@ $error_msgs = array(
   "regPass!"=>"Password and Repeat password dose not metch",
   "regTerms"=>"You must to accept terms to register",
   "emailExist"=>"Account with entered email all ready exist,try <a href='recovery'>forgot password.</a>",
-
+  "errorCreatingAcc"=>"Doslo je do greske, pokusajte kroz 5 minuta",
 );
